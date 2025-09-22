@@ -1,0 +1,179 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4b0082;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffdd57;
+}
+
+.nav-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff6f61, #ffdd57);
+  text-align: center;
+  padding: 2rem;
+  flex-direction: column;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+.btn {
+  background: #4b0082;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.hero-img img {
+  margin-top: 2rem;
+  width: 120px;
+}
+
+/* Task Manager */
+.task-section {
+  padding: 2rem;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.task-section h2 {
+  margin-bottom: 1rem;
+}
+
+.task-input {
+  margin-bottom: 1rem;
+}
+
+.task-input input {
+  padding: 0.5rem;
+  width: 250px;
+}
+
+.task-input button {
+  padding: 0.5rem 1rem;
+  margin-left: 5px;
+  background: #4b0082;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#taskList li {
+  background: white;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+#taskList li button {
+  background: #ff6f61;
+  border: none;
+  color: white;
+  padding: 3px 7px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 5px;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.social-links a {
+  color: white;
+  margin: 0 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #4b0082;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    border-radius: 8px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
